@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+</head>
+<body>
+
+<div class="bg-no-repeat bg-cover w-full pb-40"
+     style="background-image: url('images/desktop/image-hero.jpg');background-position: 35% 50%;">
+    <header class="container mx-auto w-full text-white w-full flex flex-row items-center justify-between h-32 mb-8 relative z-20">
+        <div class="font-alta text-xl font-bold">loopstudios</div>
+        <input class="absolute right-0 bottom-0 hidden" type="checkbox" id="chk-mob-menu">
+        <label for="chk-mob-menu" class="lg:hidden block show-menu-btn ">
+            <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/>
+                </g>
+            </svg>
+        </label>
+        <ul id="menu" class="md:flex md:flex-row md:static flex-col absolute font-alta text-sm top-full -bottom-3/4 hidden">
+            <li class="hide-menu-btn hidden">
+                <div class="font-alta text-2xl font-bold">loopstudios</div>
+                <label for="chk-mob-menu">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+                              fill="#FFF" fill-rule="evenodd"/>
+                    </svg>
+                </label>
+            </li>
+            <li class="mr-5 cursor-pointer relative">About</li>
+            <li class="mr-5 cursor-pointer relative">Careers</li>
+            <li class="mr-5 cursor-pointer relative">Events</li>
+            <li class="mr-5 cursor-pointer relative">Products</li>
+            <li class=" cursor-pointer relative">Support</li>
+        </ul>
+    </header>
+    <div class="container mx-auto w-full">
+        <div class="mb-20 mt-24">
+            <div class="text-white border-2 border-white p-5 md:text-5xl text-3xl font-josphins max-w-md uppercase mx-auto md:mr-auto md:ml-0 ">
+                Immersive experiences that deliver
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w-full">
+    <div class="container w-full mx-auto mt-24 flex flex-col lg:flex-row">
+
+        <img src="images/desktop/image-interactive.jpg" alt="interactive vr" class="items-start "/>
+
+        <div class="md:self-end lg:self-center md:-ml-40 w-full lg:w-1/2 md:w-full -mb-40 bg-white md:p-20 p-8">
+            <h1 class="font-josphins lg:text-4xl md:text-4xl text-3xl md:max-w-lg md:leading-normal uppercase mb-4 md:text-left text-center">
+                The leader in interactive VR
+            </h1>
+            <p class="font-alta text-base text-gray-400 max-w-lg leading-normal md:text-left text-center">
+                Founded in 2011, Loopstudios has been producing world-class virtual reality
+                projects for some of the best companies around the globe. Our award-winning
+                creations have transformed businesses through digital experiences that bind
+                to their brand.
+            </p>
+        </div>
+    </div>
+    <div class="w-full container mx-auto flex flex-row flex-wrap mt-24 mb-24">
+        <div class="order-1 flex-grow md:w-1/2 font-josphins font-medium md:text-4xl text-3xl uppercase my-12 text-center md:text-left tracking-widest">
+            Our creations
+        </div>
+        <div class="md:order-2 order-3 flex-shrink md:w-1/2 w-full flex items-center md:justify-end justify-center font-josphins uppercase">
+            <button class="border border-black pt-3 pb-2 px-8 my-12 text-base font-bold text-center hover:bg-black hover:border-white hover:text-white hover:shadow cursor-pointer outline-none">
+                See all
+            </button>
+        </div>
+        <div class="grid order-2 md:order-3 md:grid-cols-4 grid-cols-1 md:grid-rows-2 gap-5 flex-grow w-full px-8 md:px-0">
+            <div class="relative text-white hover:text-black gallery-item cursor-pointer">
+                <img alt="deep-earth" src="images/desktop/image-deep-earth.jpg" class="w-full w-full hidden md:block"/>
+                <img alt="deep-earth" src="images/mobile/image-deep-earth.jpg" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-medium w-2/3 max-w-xs">
+                    Deep earth
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item cursor-pointer">
+                <img src="images/desktop/image-night-arcade.jpg" alt="" class="w-full w-full hidden md:block"/>
+                <img src="images/mobile/image-night-arcade.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-medium w-2/3 max-w-xs">
+                    Night arcade
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item cursor-pointer">
+                <img src="images/desktop/image-soccer-team.jpg" alt="" class="w-full w-full hidden md:block"/>
+                <img src="images/mobile/image-soccer-team.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-medium w-2/3 max-w-xs">
+                    Soccer team VR
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item cursor-pointer">
+                <img src="images/desktop/image-grid.jpg" alt="" class="w-full w-full hidden md:block"/>
+                <img src="images/mobile/image-grid.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-medium w-2/3 max-w-xs">
+                    The grid
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item cursor-pointer">
+                <img src="images/desktop/image-from-above.jpg" alt="" class="w-full w-full hidden md:block"/>
+                <img src="images/mobile/image-from-above.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-medium w-2/3 max-w-xs">
+                    From up above VR
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item cursor-pointer">
+                <img src="images/desktop/image-pocket-borealis.jpg" alt="" class="w-full hidden md:block"/>
+                <img src="images/mobile/image-pocket-borealis.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-medium w-2/3 max-w-xs">
+                    Pocket borealis
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item">
+                <img src="images/desktop/image-curiosity.jpg" alt="" class="w-full w-full hidden md:block"/>
+                <img src="images/mobile/image-curiosity.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-bold w-2/3 max-w-xs">
+                    The curiosity
+                </h1>
+            </div>
+
+            <div class="relative text-white hover:text-black gallery-item">
+                <img src="images/desktop/image-fisheye.jpg" alt="" class="w-full w-full hidden md:block"/>
+                <img src="images/mobile/image-fisheye.jpg" alt="" class="w-full block md:hidden"/>
+                <h1 class="absolute bottom-0 font-josphins md:text-3xl text-2xl uppercase md:p-8 pl-6 pt-8 pb-3 pr-8 font-bold w-2/3 max-w-xs">
+                    Make it fisheye
+                </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="w-full bg-black">
+    <div class="container py-5 w-full text-white mx-auto font-alta">
+        <div class="w-full flex md:flex-row flex-col items-center justify-between flex-wrap">
+            <div class="text-xl font-bold order-1 md:w-1/2 w-full md:text-left text-center pt-10">loopstudios</div>
+            <div class="text-sm md:order-3 order-2 md:w-1/2 w-full flex justify-center">
+                <ul class="flex flex-row w-full md:flex-row flex-col items-center md:justify-start justify-center py-10">
+                    <li class="md:mr-5 md:my-0 my-3 cursor-pointer border-b border-solid border-transparent hover:border-white text-center">
+                        About
+                    </li>
+                    <li class="md:mr-5 md:my-0 my-3 cursor-pointer relative text-center">
+                        Careers
+                    </li>
+                    <li class="md:mr-5 md:my-0 my-3 cursor-pointer relative text-center">
+                        Events
+                    </li>
+                    <li class="md:mr-5 md:my-0 my-3 cursor-pointer relative text-center">
+                        Products
+                    </li>
+                    <li class="my-3 cursor-pointer relative text-center">
+                        Support
+                    </li>
+                </ul>
+            </div>
+            <div class="md:order-2 order-3 md:w-1/2 w-full flex justify-center md:justify-end">
+                <div class="flex md:flex-row items-center  pt-10">
+                    <img src="images/icon-facebook.svg" alt="facebook"
+                         class="mr-5 cursor-pointer border-b border-solid border-transparent hover:border-white py-1">
+                    <img src="images/icon-twitter.svg" alt="twitter"
+                         class="mr-5 cursor-pointer border-b border-solid border-transparent hover:border-white py-1">
+                    <img src="images/icon-pinterest.svg" alt="pinterest"
+                         class="mr-5 cursor-pointer border-b border-solid border-transparent hover:border-white py-1">
+                    <img src="images/icon-instagram.svg" alt="instagram"
+                         class="cursor-pointer border-b border-solid border-transparent hover:border-white py-1">
+                </div>
+
+            </div>
+            <div class="order-4 md:w-1/2 w-full flex justify-center">
+                <div class="w-full flex items-center md:justify-end justify-center text-center py-10">
+                    © 2021 Loopstudios. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<div class="text-white text-xs text-center w-full bg-gray-500 py-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Wallis Kassiwin</a>.
+</div>
+
+</body>
+</html>
